@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Woodland Heritage & Hearth Stew Philosophy | CloveStewPine</title>
+  <meta name="description" content="Discover the heritage of CloveStewPine. Learn about our forest foraging ethics, heirloom Dutch oven restoration, and scientific extraction of botanical terpenes and clove aromatics.">
+  <link rel="canonical" href="https://clovestewpine.com/about.html">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgressBar" class="reading-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fas fa-tree"></i> Woodland Hearthside Autumn Guild Open</span>
+        <span class="top-bar-item"><i class="fas fa-fire-burner"></i> 100% Forest-Foraged Botanical & Clove Stew Science</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-book-open"></i> Over 150+ Tested Stew Monographs</span>
+        <a href="contact.html" style="color:#FAF7F2; text-decoration:underline; margin-left:8px;">Join Hearth Guild</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.php" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link active">Our Heritage</a></li>
+          <li><a href="blog.html" class="nav-link ">Stew Treatises</a></li>
+          <li><a href="index.php#planner" class="nav-link">Stew Planner</a></li>
+          <li><a href="index.php#botanicals" class="nav-link">Botanical Science</a></li>
+          <li><a href="index.php#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchModalTrigger" class="icon-btn" aria-label="Search Stews"><i class="fas fa-search"></i></button>
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="blog.html" class="btn btn-primary btn-sm">Explore Stews</a>
+        <button id="mobileMenuToggle" class="icon-btn hamburger-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+      <button id="drawerCloseBtn" class="icon-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">Our Heritage</a></li>
+      <li><a href="blog.html">Stew Treatises</a></li>
+      <li><a href="index.php#planner">Stew Planner</a></li>
+      <li><a href="index.php#botanicals">Botanical Science</a></li>
+      <li><a href="index.php#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="blog.html" class="btn btn-primary" style="width:100%;">View All Stews</a>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="searchModalOverlay" class="modal-overlay">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <h4 style="font-family: var(--font-heading); margin-bottom:0;">Search Woodland Stew Directory</h4>
+        <button id="searchCloseBtn" class="icon-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="liveSearchInput" placeholder="Search by ingredient, simmer technique, or spice..." autocomplete="off">
+      </div>
+      <div id="searchResultsContainer" class="search-results">
+        <p style="color:var(--text-muted);font-size:0.88rem;">Type a stew type, botanical spice, or cut...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subpage Header -->
+  <section class="section section-alt" style="padding: 4rem 0 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <div class="badge badge-clove"><i class="fas fa-scroll"></i> Heritage & Vision</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2rem, 3.8vw, 3rem); margin-bottom:1rem;">The Forest Hearth: Our Culinary Lineage & Craft</h1>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="section section-surface">
+    <div class="container">
+      
+        <div class="split-row" style="margin-bottom: 4rem;">
+          <div class="split-content">
+            <div class="badge badge-clove"><i class="fas fa-tree"></i> Woodland Origins</div>
+            <h2>Born of Mountain Air, Ember Fires, and Ancient Conifers</h2>
+            <p style="line-height:1.8; margin-bottom:1.25rem;">CloveStewPine was founded in the high alpine valleys by a collaborative collective of culinary biochemists, heirloom cast iron restorers, and master forest foragers. Our shared obsession emerged from a simple realization: modern fast-paced cookery had abandoned the transformative thermodynamics of patient hearthside stewing.</p>
+            <p style="line-height:1.8; margin-bottom:1.25rem;">In an era dominated by instantaneous pressure cookers and chemical artificial flavorings, we returned to the primal elements of food craft: seasoned iron, hardwood embers, mountain spring water, and the complex aromatic synergy of whole dried cloves and evergreen pine needles.</p>
+          </div>
+          <div class="split-media">
+            <img src="images/stew-artisan-woodland-chef-stirring.jpg" alt="Artisan Chef Stirring Hearthside Stew Pot" width="600" height="380">
+          </div>
+        </div>
+
+        <div class="split-row reverse" style="margin-bottom: 4rem;">
+          <div class="split-content">
+            <div class="badge badge-sage"><i class="fas fa-leaf"></i> Foraging Ethics</div>
+            <h2>Ethical Forest Stewardship & Wild Conifer Harvest</h2>
+            <p style="line-height:1.8; margin-bottom:1.25rem;">We hold a strict covenant with the woodland ecosystems that nourish our culinary practice. Wild evergreen needles (Eastern White Pine, Balsam Fir, and Norway Spruce) are gathered exclusively from mature upper canopy branches following natural windstorms, or carefully hand-pruned from lateral shoots during spring flush.</p>
+            <p style="line-height:1.8; margin-bottom:1.25rem;">We never harvest more than 5% of any single conifer tree, ensuring vitality and ecological balance. Every foraged batch of wild mushrooms, juniper cones, and wild mountain allium is thoroughly cataloged by GPS coordinates, seasonal climate metrics, and botanical species verification.</p>
+          </div>
+          <div class="split-media">
+            <img src="images/stew-alpine-pine-forest-mountain.jpg" alt="Evergreen Pine Forest Landscape" width="600" height="380">
+          </div>
+        </div>
+
+        <div class="section-surface" style="padding: 3rem; border-radius: var(--radius-xl); border: 1px solid var(--border); margin-bottom: 4rem;">
+          <h3 style="color:var(--primary); font-family:var(--font-heading); margin-bottom:1.5rem; text-align:center;">Our Four Foundational Guild Pillars</h3>
+          <div class="grid-2" style="gap:2rem;">
+            <div>
+              <h4 style="color:var(--clove); margin-bottom:0.5rem;"><i class="fas fa-temperature-low"></i> 1. Uncompromising Thermal Patience</h4>
+              <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;">We reject rapid boiling. Every stew recipe is calibrated to maintain steady internal convective liquid temperatures between 175°F and 190°F, allowing collagen denaturation without fiber stress.</p>
+            </div>
+            <div>
+              <h4 style="color:var(--clove); margin-bottom:0.5rem;"><i class="fas fa-mortar-pestle"></i> 2. Whole Botanical Extraction</h4>
+              <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;">We use whole sun-dried spice buds and raw forest needles. This delivers continuous lipid-soluble eugenol and pinene diffusion without the oxidation or bitterness of commercial ground powders.</p>
+            </div>
+            <div>
+              <h4 style="color:var(--clove); margin-bottom:0.5rem;"><i class="fas fa-shield-alt"></i> 3. Heirloom Cast Iron Metallurgy</h4>
+              <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;">Our cooking vessels are heavy virgin cast iron and enameled French cocottes that distribute dense omnidirectional radiant heat and seal in essential volatile terpenes.</p>
+            </div>
+            <div>
+              <h4 style="color:var(--clove); margin-bottom:0.5rem;"><i class="fas fa-hand-holding-heart"></i> 4. Zero-Waste Culinary Ecology</h4>
+              <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;">Bone scraps, vegetable trimmings, and spent botanical bouquet garnis are simmered into tertiary stocks, fermented into garden fertilizers, or returned to woodland soil.</p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.php" class="brand-logo">
+            <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+            <span>CloveStewPine</span>
+          </a>
+          <p>An artisanal culinary laboratory dedicated to woodland hearthside stews, botanical conifer infusions, whole clove phytochemistry, and cast iron braising science.</p>
+          <div style="display:flex; gap:1rem; font-size:1.15rem; color:#9BAEA1;">
+            <a href="index.php" aria-label="Home"><i class="fas fa-utensils"></i></a>
+            <a href="about.html" aria-label="About"><i class="fas fa-tree"></i></a>
+            <a href="blog.html" aria-label="Blog"><i class="fas fa-book"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Culinary Monograph</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Woodland Game Stews</a></li>
+            <li><a href="blog.html">Foraged Fungi Pots</a></li>
+            <li><a href="blog.html">Dutch Oven Braises</a></li>
+            <li><a href="blog.html">Alpine Duck Ragouts</a></li>
+            <li><a href="blog.html">Vegetable Potages</a></li>
+            <li><a href="blog.html">Sourdough Dumplings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Atelier & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Forest Heritage</a></li>
+            <li><a href="about.html#botany">Botanical Ethics</a></li>
+            <li><a href="about.html#castiron">Cast Iron Guild</a></li>
+            <li><a href="contact.html">Guild Workshops</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Botanical Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Management</a></li>
+            <li><a href="contact.html">Contact Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CloveStewPine. All Rights Reserved. Crafted for slow hearth cooking.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>Hearthside Cookie & Privacy Notice</h4>
+    <p>We use essential cookies and anonymized analytics to measure recipe readership and improve your culinary experience on CloveStewPine.</p>
+    <div class="cookie-banner-actions">
+      <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookieDeclineBtn" class="btn btn-outline btn-sm">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact the Woodland Hearth Guild | CloveStewPine</title>
+  <meta name="description" content="Get in touch with CloveStewPine culinary instructors, foraging guides, and editorial staff. Inquire about guild memberships, masterclasses, and botanical consultations.">
+  <link rel="canonical" href="https://clovestewpine.com/contact.html">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgressBar" class="reading-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fas fa-tree"></i> Woodland Hearthside Autumn Guild Open</span>
+        <span class="top-bar-item"><i class="fas fa-fire-burner"></i> 100% Forest-Foraged Botanical & Clove Stew Science</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-book-open"></i> Over 150+ Tested Stew Monographs</span>
+        <a href="contact.html" style="color:#FAF7F2; text-decoration:underline; margin-left:8px;">Join Hearth Guild</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.php" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link ">Our Heritage</a></li>
+          <li><a href="blog.html" class="nav-link ">Stew Treatises</a></li>
+          <li><a href="index.php#planner" class="nav-link">Stew Planner</a></li>
+          <li><a href="index.php#botanicals" class="nav-link">Botanical Science</a></li>
+          <li><a href="index.php#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchModalTrigger" class="icon-btn" aria-label="Search Stews"><i class="fas fa-search"></i></button>
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="blog.html" class="btn btn-primary btn-sm">Explore Stews</a>
+        <button id="mobileMenuToggle" class="icon-btn hamburger-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+      <button id="drawerCloseBtn" class="icon-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">Our Heritage</a></li>
+      <li><a href="blog.html">Stew Treatises</a></li>
+      <li><a href="index.php#planner">Stew Planner</a></li>
+      <li><a href="index.php#botanicals">Botanical Science</a></li>
+      <li><a href="index.php#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="blog.html" class="btn btn-primary" style="width:100%;">View All Stews</a>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="searchModalOverlay" class="modal-overlay">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <h4 style="font-family: var(--font-heading); margin-bottom:0;">Search Woodland Stew Directory</h4>
+        <button id="searchCloseBtn" class="icon-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="liveSearchInput" placeholder="Search by ingredient, simmer technique, or spice..." autocomplete="off">
+      </div>
+      <div id="searchResultsContainer" class="search-results">
+        <p style="color:var(--text-muted);font-size:0.88rem;">Type a stew type, botanical spice, or cut...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subpage Header -->
+  <section class="section section-alt" style="padding: 4rem 0 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <div class="badge badge-clove"><i class="fas fa-scroll"></i> Inquiries & Guild</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2rem, 3.8vw, 3rem); margin-bottom:1rem;">Connect with the Hearthside Stew Guild</h1>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="section section-surface">
+    <div class="container">
+      
+        <div class="split-row" style="margin-bottom: 4rem;">
+          <div class="split-content">
+            <div class="badge badge-clove"><i class="fas fa-envelope"></i> Atelier Inquiries</div>
+            <h2>We Welcome Fellow Hearth Cooks, Botanists & Foragers</h2>
+            <p style="line-height:1.8; margin-bottom:1.25rem;">Whether you are seeking botanical safety verification for wild conifer foraging, looking to commission an heirloom cast iron cookware review, or inquiring about our seasonal hearth culinary masterclasses, our editorial team is here to assist.</p>
+            
+            <div style="margin-top:2rem; display:flex; flex-direction:column; gap:1.25rem;">
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background-color:var(--primary); color:#fff;"><i class="fas fa-map-pin"></i></div>
+                <div>
+                  <strong style="display:block; color:var(--text);">Woodland Atelier & Test Kitchen</strong>
+                  <span style="font-size:0.9rem; color:var(--text-muted);">482 Pine Needle Trail, Alpine Ridge, VT 05401</span>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background-color:var(--clove); color:#fff;"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong style="display:block; color:var(--text);">Direct Editorial Dispatch</strong>
+                  <span style="font-size:0.9rem; color:var(--text-muted);">guild@clovestewpine.com</span>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background-color:var(--amber); color:#fff;"><i class="fas fa-clock"></i></div>
+                <div>
+                  <strong style="display:block; color:var(--text);">Guild Laboratory Hours</strong>
+                  <span style="font-size:0.9rem; color:var(--text-muted);">Tuesday – Saturday: 9:00 AM – 5:00 PM EST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-media" style="padding: 2.5rem; background-color: var(--bg-card); border-radius: var(--radius-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+            <h3 style="font-family:var(--font-heading); color:var(--primary); margin-bottom:1.5rem;">Send a Guild Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your dispatch has been received by the CloveStewPine Guild.'); this.reset();">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Master Chef Julian Vance" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="julian@hearthlodge.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Inquiry Nature</label>
+                <select id="contactSubject" class="form-control">
+                  <option>Botanical Foraging Identification Question</option>
+                  <option>Heirloom Dutch Oven Restoration Inquiries</option>
+                  <option>Culinary Masterclass & Workshop Admission</option>
+                  <option>Press, Editorial & Publishing Collaboration</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMsg">Your Detailed Dispatch</label>
+                <textarea id="contactMsg" class="form-control" rows="4" placeholder="Describe your culinary inquiry or recipe question..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-clove" style="width:100%;"><i class="fas fa-paper-plane"></i> Transmit Dispatch</button>
+            </form>
+          </div>
+        </div>
+        
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.php" class="brand-logo">
+            <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+            <span>CloveStewPine</span>
+          </a>
+          <p>An artisanal culinary laboratory dedicated to woodland hearthside stews, botanical conifer infusions, whole clove phytochemistry, and cast iron braising science.</p>
+          <div style="display:flex; gap:1rem; font-size:1.15rem; color:#9BAEA1;">
+            <a href="index.php" aria-label="Home"><i class="fas fa-utensils"></i></a>
+            <a href="about.html" aria-label="About"><i class="fas fa-tree"></i></a>
+            <a href="blog.html" aria-label="Blog"><i class="fas fa-book"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Culinary Monograph</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Woodland Game Stews</a></li>
+            <li><a href="blog.html">Foraged Fungi Pots</a></li>
+            <li><a href="blog.html">Dutch Oven Braises</a></li>
+            <li><a href="blog.html">Alpine Duck Ragouts</a></li>
+            <li><a href="blog.html">Vegetable Potages</a></li>
+            <li><a href="blog.html">Sourdough Dumplings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Atelier & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Forest Heritage</a></li>
+            <li><a href="about.html#botany">Botanical Ethics</a></li>
+            <li><a href="about.html#castiron">Cast Iron Guild</a></li>
+            <li><a href="contact.html">Guild Workshops</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Botanical Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Management</a></li>
+            <li><a href="contact.html">Contact Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CloveStewPine. All Rights Reserved. Crafted for slow hearth cooking.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>Hearthside Cookie & Privacy Notice</h4>
+    <p>We use essential cookies and anonymized analytics to measure recipe readership and improve your culinary experience on CloveStewPine.</p>
+    <div class="cookie-banner-actions">
+      <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookieDeclineBtn" class="btn btn-outline btn-sm">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

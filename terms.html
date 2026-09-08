@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service & Guild Agreement | CloveStewPine</title>
+  <meta name="description" content="Review the Terms of Service governing the use of CloveStewPine, including intellectual property rights, recipe usage, and culinary guidelines.">
+  <link rel="canonical" href="https://clovestewpine.com/terms.html">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgressBar" class="reading-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fas fa-tree"></i> Woodland Hearthside Autumn Guild Open</span>
+        <span class="top-bar-item"><i class="fas fa-fire-burner"></i> 100% Forest-Foraged Botanical & Clove Stew Science</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-book-open"></i> Over 150+ Tested Stew Monographs</span>
+        <a href="contact.html" style="color:#FAF7F2; text-decoration:underline; margin-left:8px;">Join Hearth Guild</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.php" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link ">Our Heritage</a></li>
+          <li><a href="blog.html" class="nav-link ">Stew Treatises</a></li>
+          <li><a href="index.php#planner" class="nav-link">Stew Planner</a></li>
+          <li><a href="index.php#botanicals" class="nav-link">Botanical Science</a></li>
+          <li><a href="index.php#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchModalTrigger" class="icon-btn" aria-label="Search Stews"><i class="fas fa-search"></i></button>
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="blog.html" class="btn btn-primary btn-sm">Explore Stews</a>
+        <button id="mobileMenuToggle" class="icon-btn hamburger-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+      <button id="drawerCloseBtn" class="icon-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">Our Heritage</a></li>
+      <li><a href="blog.html">Stew Treatises</a></li>
+      <li><a href="index.php#planner">Stew Planner</a></li>
+      <li><a href="index.php#botanicals">Botanical Science</a></li>
+      <li><a href="index.php#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="blog.html" class="btn btn-primary" style="width:100%;">View All Stews</a>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="searchModalOverlay" class="modal-overlay">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <h4 style="font-family: var(--font-heading); margin-bottom:0;">Search Woodland Stew Directory</h4>
+        <button id="searchCloseBtn" class="icon-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="liveSearchInput" placeholder="Search by ingredient, simmer technique, or spice..." autocomplete="off">
+      </div>
+      <div id="searchResultsContainer" class="search-results">
+        <p style="color:var(--text-muted);font-size:0.88rem;">Type a stew type, botanical spice, or cut...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subpage Header -->
+  <section class="section section-alt" style="padding: 4rem 0 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <div class="badge badge-clove"><i class="fas fa-scroll"></i> Terms of Use</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2rem, 3.8vw, 3rem); margin-bottom:1rem;">Terms of Service & Guild Usage Agreement</h1>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="section section-surface">
+    <div class="container">
+
+        <div class="article-content" style="max-width: 860px; margin: 0 auto;">
+          <p><strong>Effective Date:</strong> January 1, 2026 | <strong>Last Updated:</strong> September 2026</p>
+          <p>Welcome to CloveStewPine. These Terms of Service and Guild Usage Agreement constitute a legally binding contract between you (the "User", "Reader", or "Guild Member") and CloveStewPine ("we", "us", or "our"), governing your access to and utilization of https://clovestewpine.com, including all associated subdomains, digital publications, recipe monographs, biochemical analyses, interactive calculators, and newsletter dispatches.</p>
+
+          <h2>1. Acceptance of Terms and Binding Agreement</h2>
+          <p>By browsing, accessing, bookmarking, interacting with, or registering on this website, you acknowledge that you have read, understood, and agreed to be legally bound by these Terms of Service, our Privacy Policy, and our Botanical Safety Disclaimers. If you do not agree with any provision of these terms, you must immediately terminate use of this website.</p>
+
+          <h2>2. Intellectual Property Rights & Copyright Reservation</h2>
+          <p>All materials published on CloveStewPine—including but not limited to culinary monographs, chemical formulas, thermodynamic diagrams, recipe instructions, written prose, photography, audio-visual media, logos, trademarks, and source code—are the exclusive intellectual property of CloveStewPine, protected under United States and international copyright, trademark, and trade secret laws.</p>
+          <ul>
+            <li><strong>Permitted Personal Use:</strong> You are granted a limited, revocable, non-exclusive, non-transferable license to view, download, and print individual recipe monographs solely for personal, non-commercial culinary execution.</li>
+            <li><strong>Prohibited Commercial Exploitation:</strong> You may not republish, reproduce, mirror, syndicate, sell, sublicense, or distribute any portion of our content in commercial cookery books, digital courses, subscription platforms, or AI training datasets without prior written authorization from CloveStewPine.</li>
+            <li><strong>Automated Scraping Prohibition:</strong> Systematic data extraction, web crawling, scraping, or harvesting of recipe datasets and photography using automated scripts, spiders, or bots is strictly prohibited.</li>
+          </ul>
+
+          <h2>3. Culinary Experimentation & Food Safety Responsibilities</h2>
+          <p>The culinary monographs and scientific braising parameters published on CloveStewPine represent the culmination of extensive test-kitchen research. However, cooking involves inherent variables, including ambient humidity, ingredient freshness, fuel source variations, and individual culinary skill levels. You assume full responsibility for:</p>
+          <ul>
+            <li>Ensuring proper food hygiene and adequate internal cooking temperatures in accordance with United States Department of Agriculture (USDA) food safety guidelines.</li>
+            <li>Verifying the botanical identity of all wild foraged ingredients, mushrooms, and conifer foliage with multiple certified taxonomic references.</li>
+            <li>Identifying and managing personal food allergies, dietary restrictions, and ingredient sensitivities among those consuming your prepared dishes.</li>
+          </ul>
+
+          <h2>4. User Conduct & Interactive Features</h2>
+          <p>When interacting with our contact portals, community forums, or recipe submission systems, you agree not to post, transmit, or disseminate any material that is defamatory, obscene, fraudulent, infringing on third-party intellectual property, or containing malicious software code or unsolicited spam.</p>
+
+          <h2>5. Disclaimers of Warranties & Limitation of Liability</h2>
+          <p>CloveStewPine is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express, statutory, or implied. To the maximum extent permitted by law, CloveStewPine and its contributors, officers, and affiliates disclaim all liability for any direct, indirect, incidental, punitive, or consequential damages arising from your use of this site, reliance on recipe data, foraging of wild plants, or handling of high-temperature cast iron cookware.</p>
+
+          <h2>6. Governing Law & Dispute Resolution</h2>
+          <p>These Terms shall be governed by and construed in accordance with the substantive laws of the State of Vermont, USA, without regard to conflict of law principles. Any legal action or proceeding arising under these Terms shall be instituted exclusively in the federal or state courts located in Chittenden County, Vermont.</p>
+        </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.php" class="brand-logo">
+            <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+            <span>CloveStewPine</span>
+          </a>
+          <p>An artisanal culinary laboratory dedicated to woodland hearthside stews, botanical conifer infusions, whole clove phytochemistry, and cast iron braising science.</p>
+          <div style="display:flex; gap:1rem; font-size:1.15rem; color:#9BAEA1;">
+            <a href="index.php" aria-label="Home"><i class="fas fa-utensils"></i></a>
+            <a href="about.html" aria-label="About"><i class="fas fa-tree"></i></a>
+            <a href="blog.html" aria-label="Blog"><i class="fas fa-book"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Culinary Monograph</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Woodland Game Stews</a></li>
+            <li><a href="blog.html">Foraged Fungi Pots</a></li>
+            <li><a href="blog.html">Dutch Oven Braises</a></li>
+            <li><a href="blog.html">Alpine Duck Ragouts</a></li>
+            <li><a href="blog.html">Vegetable Potages</a></li>
+            <li><a href="blog.html">Sourdough Dumplings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Atelier & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Forest Heritage</a></li>
+            <li><a href="about.html#botany">Botanical Ethics</a></li>
+            <li><a href="about.html#castiron">Cast Iron Guild</a></li>
+            <li><a href="contact.html">Guild Workshops</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Botanical Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Management</a></li>
+            <li><a href="contact.html">Contact Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CloveStewPine. All Rights Reserved. Crafted for slow hearth cooking.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>Hearthside Cookie & Privacy Notice</h4>
+    <p>We use essential cookies and anonymized analytics to measure recipe readership and improve your culinary experience on CloveStewPine.</p>
+    <div class="cookie-banner-actions">
+      <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookieDeclineBtn" class="btn btn-outline btn-sm">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

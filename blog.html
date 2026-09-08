@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woodland Stew Treatises & Botanical Science Library | CloveStewPine</title>
+  <meta name="description" content="Explore our complete library of hearthside stew monographs, collagen braising science, pine needle foraging guides, and clove phytochemistry.">
+  <link rel="canonical" href="https://clovestewpine.com/blog.html">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgressBar" class="reading-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fas fa-tree"></i> Woodland Hearthside Autumn Guild Open</span>
+        <span class="top-bar-item"><i class="fas fa-fire-burner"></i> 100% Forest-Foraged Botanical & Clove Stew Science</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-book-open"></i> Over 150+ Tested Stew Monographs</span>
+        <a href="contact.html" style="color:#FAF7F2; text-decoration:underline; margin-left:8px;">Join Hearth Guild</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.php" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link ">Our Heritage</a></li>
+          <li><a href="blog.html" class="nav-link active">Stew Treatises</a></li>
+          <li><a href="index.php#planner" class="nav-link">Stew Planner</a></li>
+          <li><a href="index.php#botanicals" class="nav-link">Botanical Science</a></li>
+          <li><a href="index.php#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchModalTrigger" class="icon-btn" aria-label="Search Stews"><i class="fas fa-search"></i></button>
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="blog.html" class="btn btn-primary btn-sm">Explore Stews</a>
+        <button id="mobileMenuToggle" class="icon-btn hamburger-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.php" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+      <button id="drawerCloseBtn" class="icon-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">Our Heritage</a></li>
+      <li><a href="blog.html">Stew Treatises</a></li>
+      <li><a href="index.php#planner">Stew Planner</a></li>
+      <li><a href="index.php#botanicals">Botanical Science</a></li>
+      <li><a href="index.php#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="blog.html" class="btn btn-primary" style="width:100%;">View All Stews</a>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="searchModalOverlay" class="modal-overlay">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <h4 style="font-family: var(--font-heading); margin-bottom:0;">Search Woodland Stew Directory</h4>
+        <button id="searchCloseBtn" class="icon-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="liveSearchInput" placeholder="Search by ingredient, simmer technique, or spice..." autocomplete="off">
+      </div>
+      <div id="searchResultsContainer" class="search-results">
+        <p style="color:var(--text-muted);font-size:0.88rem;">Type a stew type, botanical spice, or cut...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subpage Header -->
+  <section class="section section-alt" style="padding: 4rem 0 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <div class="badge badge-clove"><i class="fas fa-scroll"></i> Monograph Library</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2rem, 3.8vw, 3rem); margin-bottom:1rem;">Woodland Stew Treatises & Master Culinary Monographs</h1>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="section section-surface">
+    <div class="container">
+      
+        <div style="max-width: 760px; margin: 0 auto 3rem auto; text-align: center;">
+          <p class="section-subtitle">Exhaustive culinary research papers, step-by-step hearth recipes, and molecular braising analyses designed for culinary purists, foragers, and home cooks.</p>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 4rem;">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-clove-simmering-dutch-oven.jpg" alt="Collagen Hydrolysis Stew Chemistry" width="400" height="250">
+            </div>
+            <div class="badge badge-amber" style="font-size:0.75rem; margin-bottom:0.5rem;">Thermodynamics</div>
+            <h3 class="card-title"><a href="blog/the-science-of-slow-stewing-collagen-hydrolysis-and-gelatin-viscosity.html">The Science of Slow Stewing: Collagen Hydrolysis & Gelatin Viscosity</a></h3>
+            <p class="card-text">A biochemical breakdown of how triple-helix collagen denatures into silken gelatin between 160°F and 195°F, transforming tough cuts into unctuous feasts.</p>
+            <div class="card-meta">
+              <span>Read Time: 12 Mins</span>
+              <a href="blog/the-science-of-slow-stewing-collagen-hydrolysis-and-gelatin-viscosity.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-whole-cloves-aromatic-spice.jpg" alt="Aromatic Clove Botany and Eugenol Chemistry" width="400" height="250">
+            </div>
+            <div class="badge badge-clove" style="font-size:0.75rem; margin-bottom:0.5rem;">Phytochemistry</div>
+            <h3 class="card-title"><a href="blog/clove-eugenol-phytochemistry-and-aromatic-savory-stew-synergy.html">Clove Eugenol Phytochemistry: Aromatic Savory Stew Synergy</a></h3>
+            <p class="card-text">Exploring the molecular interaction between whole clove phenylpropanoids, lipid molecules, and savory meat peptides in long Dutch oven reductions.</p>
+            <div class="card-meta">
+              <span>Read Time: 11 Mins</span>
+              <a href="blog/clove-eugenol-phytochemistry-and-aromatic-savory-stew-synergy.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-pine-needle-forest-foraging.jpg" alt="Botanical Pine Needle Foraging & Terpenes" width="400" height="250">
+            </div>
+            <div class="badge badge-sage" style="font-size:0.75rem; margin-bottom:0.5rem;">Forest Foraging</div>
+            <h3 class="card-title"><a href="blog/foraging-evergreen-pine-needles-terpenes-safety-and-broth-infusions.html">Foraging Evergreen Pine Needles: Terpenes, Safety & Broth Infusions</a></h3>
+            <p class="card-text">Botanical taxonomy of edible Pinus species, essential safety protocols against toxic yew, and precise infusion timings for clean citrusy broths.</p>
+            <div class="card-meta">
+              <span>Read Time: 13 Mins</span>
+              <a href="blog/foraging-evergreen-pine-needles-terpenes-safety-and-broth-infusions.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-cast-iron-hearth-fire.jpg" alt="Cast Iron Dutch Oven Thermal Mass" width="400" height="250">
+            </div>
+            <div class="badge badge-amber" style="font-size:0.75rem; margin-bottom:0.5rem;">Cookware Metallurgy</div>
+            <h3 class="card-title"><a href="blog/cast-iron-dutch-oven-metallurgy-thermal-mass-and-lid-condensation-physics.html">Cast Iron Dutch Oven Metallurgy: Thermal Mass & Lid Condensation Physics</a></h3>
+            <p class="card-text">How thick-walled iron cocottes regulate radiant thermal convection, prevent hotspot scorching, and redistribute aromatic steam condensation.</p>
+            <div class="card-meta">
+              <span>Read Time: 10 Mins</span>
+              <a href="blog/cast-iron-dutch-oven-metallurgy-thermal-mass-and-lid-condensation-physics.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-wild-mushroom-woodland-pot.jpg" alt="Wild Foraged Fungi Umami Ribonucleotides" width="400" height="250">
+            </div>
+            <div class="badge badge-sage" style="font-size:0.75rem; margin-bottom:0.5rem;">Umami Synergy</div>
+            <h3 class="card-title"><a href="blog/wild-forest-fungi-morels-chanterelles-and-glutamate-umami-synergy.html">Wild Forest Fungi: Morels, Chanterelles & Glutamate Umami Synergy</a></h3>
+            <p class="card-text">Maximizing savory depth in woodland stews through natural mushroom dehydration, rehydration broth extraction, and ribonucleotide pairing.</p>
+            <div class="card-meta">
+              <span>Read Time: 11 Mins</span>
+              <a href="blog/wild-forest-fungi-morels-chanterelles-and-glutamate-umami-synergy.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="images/stew-crusty-skillet-dumplings.jpg" alt="Artisan Sourdough Dumplings and Broth Density" width="400" height="250">
+            </div>
+            <div class="badge badge-clove" style="font-size:0.75rem; margin-bottom:0.5rem;">Hearth Accompaniments</div>
+            <h3 class="card-title"><a href="blog/artisan-sourdough-dumplings-and-viscous-stew-broth-adsorption-mechanics.html">Artisan Sourdough Dumplings: Viscous Stew Broth Adsorption Mechanics</a></h3>
+            <p class="card-text">The physics of crumb porosity, gelatinized starches, and herb fat emulsification when steaming sourdough dumplings directly atop simmering ragouts.</p>
+            <div class="card-meta">
+              <span>Read Time: 12 Mins</span>
+              <a href="blog/artisan-sourdough-dumplings-and-viscous-stew-broth-adsorption-mechanics.html" style="font-weight:700; color:var(--clove);">Read Monograph &rarr;</a>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.php" class="brand-logo">
+            <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+            <span>CloveStewPine</span>
+          </a>
+          <p>An artisanal culinary laboratory dedicated to woodland hearthside stews, botanical conifer infusions, whole clove phytochemistry, and cast iron braising science.</p>
+          <div style="display:flex; gap:1rem; font-size:1.15rem; color:#9BAEA1;">
+            <a href="index.php" aria-label="Home"><i class="fas fa-utensils"></i></a>
+            <a href="about.html" aria-label="About"><i class="fas fa-tree"></i></a>
+            <a href="blog.html" aria-label="Blog"><i class="fas fa-book"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Culinary Monograph</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Woodland Game Stews</a></li>
+            <li><a href="blog.html">Foraged Fungi Pots</a></li>
+            <li><a href="blog.html">Dutch Oven Braises</a></li>
+            <li><a href="blog.html">Alpine Duck Ragouts</a></li>
+            <li><a href="blog.html">Vegetable Potages</a></li>
+            <li><a href="blog.html">Sourdough Dumplings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Atelier & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Forest Heritage</a></li>
+            <li><a href="about.html#botany">Botanical Ethics</a></li>
+            <li><a href="about.html#castiron">Cast Iron Guild</a></li>
+            <li><a href="contact.html">Guild Workshops</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Botanical Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Management</a></li>
+            <li><a href="contact.html">Contact Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CloveStewPine. All Rights Reserved. Crafted for slow hearth cooking.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>Hearthside Cookie & Privacy Notice</h4>
+    <p>We use essential cookies and anonymized analytics to measure recipe readership and improve your culinary experience on CloveStewPine.</p>
+    <div class="cookie-banner-actions">
+      <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookieDeclineBtn" class="btn btn-outline btn-sm">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
