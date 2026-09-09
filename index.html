@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloveStewPine - Woodland Hearthside Stews, Spiced Dutch Oven Braises & Botanical Broths</title>
+  <meta name="description" content="Discover the art and science of woodland hearthside stews. Master whole clove aromatic infusions, evergreen pine needle broths, heavy cast iron simmering, and rustic foraged root potages.">
+  <meta name="keywords" content="stew recipes, woodland stews, clove stew, pine needle infusion, hearthside braising, dutch oven stews, root vegetable casserole, bone broth reduction, cast iron cooking">
+  <link rel="canonical" href="https://clovestewpine.com/">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgressBar" class="reading-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fas fa-tree"></i> Woodland Hearthside Autumn Guild Open</span>
+        <span class="top-bar-item"><i class="fas fa-fire-burner"></i> 100% Forest-Foraged Botanical & Clove Stew Science</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-book-open"></i> Over 150+ Tested Stew Monographs</span>
+        <a href="contact.html" style="color:#FAF7F2; text-decoration:underline; margin-left:8px;">Join Hearth Guild</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">Our Heritage</a></li>
+          <li><a href="blog.html" class="nav-link">Stew Treatises</a></li>
+          <li><a href="#planner" class="nav-link">Stew Planner</a></li>
+          <li><a href="#botanicals" class="nav-link">Botanical Science</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchModalTrigger" class="icon-btn" aria-label="Search Stews"><i class="fas fa-search"></i></button>
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="blog.html" class="btn btn-primary btn-sm">Explore Stews</a>
+        <button id="mobileMenuToggle" class="icon-btn hamburger-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+        <span>CloveStewPine</span>
+      </a>
+      <button id="drawerCloseBtn" class="icon-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Our Heritage</a></li>
+      <li><a href="blog.html">Stew Treatises</a></li>
+      <li><a href="#planner">Stew Planner</a></li>
+      <li><a href="#botanicals">Botanical Science</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="blog.html" class="btn btn-primary" style="width:100%;">View All Stews</a>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="searchModalOverlay" class="modal-overlay">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <h4 style="font-family: var(--font-heading); margin-bottom:0;">Search Woodland Stew Directory</h4>
+        <button id="searchCloseBtn" class="icon-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="liveSearchInput" placeholder="Search by ingredient, simmer technique, or spice..." autocomplete="off">
+      </div>
+      <div id="searchResultsContainer" class="search-results">
+        <p style="color:var(--text-muted);font-size:0.88rem;">Type a stew type, botanical spice, or cut...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge badge-clove"><i class="fas fa-fire"></i> Hearthside Slow-Simmer Gastronomy</div>
+          <h1>The Architecture of Woodland Hearth Stews & Botanical Infusions</h1>
+          <p class="hero-lead">Where aromatic whole clove eugenol meets foraged evergreen pine needles, heavy Dutch oven thermal inertia, and gelatin-rich bone reductions. Elevating humble rustic pots into transcendent alpine culinary masterworks.</p>
+          <div class="hero-actions">
+            <a href="blog.html" class="btn btn-primary"><i class="fas fa-book-open"></i> Read Stew Treatises</a>
+            <a href="#planner" class="btn btn-outline"><i class="fas fa-sliders-h"></i> Interactive Stew Planner</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>280°F</h3>
+              <p>Optimum Collagen Conversion Simmer</p>
+            </div>
+            <div class="hero-stat">
+              <h3>100%</h3>
+              <p>Foraged & Organic Whole Botanicals</p>
+            </div>
+            <div class="hero-stat">
+              <h3>4.5 Hrs</h3>
+              <p>Average Heavy Cast Iron Braise</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card">
+            <span class="hero-card-badge"><i class="fas fa-mortar-pestle"></i> Autumn Master Pot</span>
+            <img src="images/stew-clove-simmering-dutch-oven.jpg" alt="Slow Simmering Dutch Oven Stew with Aromatic Cloves" width="600" height="460">
+            <div class="hero-card-footer">
+              <h4>Slow-Braised Woodland Shank with Clove Reduction</h4>
+              <p>Simmered 4 hours over low embers with roasted parsnips and pine needle bouquet garni.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TRUST METRIC INDICATORS -->
+  <section class="section section-surface" style="padding: 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="grid-4" style="text-align: center;">
+        <div>
+          <h3 style="color:var(--primary); font-size:2rem; margin-bottom:0.35rem;">18.5 PSI</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); font-weight:600;">Lid Steam Seal Pressure in Cast Iron</p>
+        </div>
+        <div>
+          <h3 style="color:var(--clove); font-size:2rem; margin-bottom:0.35rem;">85%</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); font-weight:600;">Eugenol Purity in Wild Clove Buds</p>
+        </div>
+        <div>
+          <h3 style="color:var(--amber); font-size:2rem; margin-bottom:0.35rem;">12 Types</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); font-weight:600;">Alpine Pine & Conifer Needle Profiles</p>
+        </div>
+        <div>
+          <h3 style="color:var(--sage); font-size:2rem; margin-bottom:0.35rem;">Zero Waste</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); font-weight:600;">Forest-to-Table Closed Loop Simmering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CORE MANIFESTO: WOODLAND STEW PHILOSOPHY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-sage"><i class="fas fa-compass"></i> Culinary Manifesto</div>
+        <h2 class="section-title">The Three Pillars of Hearthside Stew Craft</h2>
+        <p class="section-subtitle">True comfort stewing is not a hurried boiling process, but an architectural convergence of low thermodynamic convection, volatile aromatic extraction, and gelatinous structural viscosity.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-temperature-low"></i></div>
+          <h3 class="card-title">Thermodynamic Gentle Simmering</h3>
+          <p class="card-text">Collagen molecules inside tough connective muscular sheaths begin unwinding into silken gelatin only when held in a sustained temperature envelope between 160°F and 195°F. Rapid boiling denatures muscle fibrils prematurely, squeezing out moisture and creating tough, stringy meat.</p>
+          <div class="card-meta">
+            <span>Thermal Equilibrium</span>
+            <strong>180°F - 190°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background-color: var(--clove-light); color: var(--clove);"><i class="fas fa-mortar-pestle"></i></div>
+          <h3 class="card-title">Aromatic Clove & Terpene Extraction</h3>
+          <p class="card-text">Whole cloves contain high concentrations of eugenol, an aromatic phenylpropanoid that acts as a flavor multiplier for savory peptides. When paired alongside alpha-pinene from wild evergreen needles, it cuts through rich braising fats with crisp woodland clarity.</p>
+          <div class="card-meta">
+            <span>Volatile Synergy</span>
+            <strong>Eugenol + Pinene</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background-color: var(--amber-light); color: var(--amber);"><i class="fas fa-layer-group"></i></div>
+          <h3 class="card-title">Fond Seeding & Heavy Cast Iron Inertia</h3>
+          <p class="card-text">Enamelled cast iron cocottes and raw Dutch ovens possess immense thermal mass, dampening temperature spikes from uneven wood fires and electric ranges. Deep fond searing creates insoluble caramelization that dissolves slowly into the braising jus.</p>
+          <div class="card-meta">
+            <span>Vessel Material</span>
+            <strong>Virgin Cast Iron</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BOTANICAL SCIENCE: THE FOUR FOREST SPICES -->
+  <section id="botanicals" class="section section-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-clove"><i class="fas fa-seedling"></i> Phytochemical Botany</div>
+        <h2 class="section-title">Forest Botanicals & Aromatic Alchemy</h2>
+        <p class="section-subtitle">Understanding the chemical constituents of forest-foraged herbs and mountain spices that transform simple broth reductions into complex savory nectars.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-whole-cloves-aromatic-spice.jpg" alt="Whole Aromatic Dried Cloves" width="400" height="250">
+          </div>
+          <h4 style="margin-bottom:0.5rem;">Wild Harvest Cloves</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Sun-dried flower buds of <em>Syzygium aromaticum</em>. Eugenol compounds bind to animal fats, providing deep sweet-spicy warmth and natural preservation.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-pine-needle-forest-foraging.jpg" alt="Evergreen Pine Needles" width="400" height="250">
+          </div>
+          <h4 style="margin-bottom:0.5rem;">Eastern White Pine Needles</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Fresh tender spring tips of <em>Pinus strobus</em>. Rich in vitamin C, limonene, and beta-pinene, offering citrusy resinous top notes that counterbalance heavy game broths.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-forest-botanicals-herbal-infusion.jpg" alt="Wild Juniper Berries and Bay Laurel" width="400" height="250">
+          </div>
+          <h4 style="margin-bottom:0.5rem;">Alpine Juniper Berries</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Dark ripe cones of <em>Juniperus communis</em>. Imparts crisp camphoraceous and piney acidity that emulsifies dense gelatin reductions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-wild-mushroom-woodland-pot.jpg" alt="Foraged Wild Forest Mushrooms" width="400" height="250">
+          </div>
+          <h4 style="margin-bottom:0.5rem;">Dried Woodland Chanterelles</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Sun-cured forest fungi loaded with natural glutamate and guanylate ribonucleotides, creating astronomical savory umami synergy in slow braises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURE SPLIT ROW 1: THE COLLAGEN CONVERSION SCIENCE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-row">
+        <div class="split-content">
+          <div class="badge badge-amber"><i class="fas fa-atom"></i> Molecular Gastronomy</div>
+          <h2>Collagen Hydrolysis: The Secret to Liquid Silk Stews</h2>
+          <p style="line-height:1.8; margin-bottom:1.25rem;">The transformation of tough, sinewy cuts—such as beef shank, oxtail, venison shoulder, and lamb neck—into fork-tender morsels is governed by the thermal denaturation of triple-helix type I and type III collagen fibrils.</p>
+          <p style="line-height:1.8; margin-bottom:1.5rem;">When simmered below 140°F, collagen remains tough and insoluble. Above 212°F (vigorous boiling), the muscle proteins violently contract, expressing internal moisture before the collagen has melted. By maintaining the braising liquid at exactly 175°F–190°F inside a heavy lid-sealed Dutch oven, collagen gently hydrolyzes into uncoiled gelatin chains that thicken the surrounding aromatic clove broth naturally without commercial starches.</p>
+          <a href="blog.html" class="btn btn-clove"><i class="fas fa-arrow-right"></i> Explore Science Monographs</a>
+        </div>
+        <div class="split-media">
+          <img src="images/stew-spiced-lamb-shank-garnish.jpg" alt="Slow Braised Lamb Shank with Clove Glaze" width="600" height="380">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FEATURE SPLIT ROW 2: PINE NEEDLE INFUSIONS & SMOKE PROFILES -->
+  <section class="section section-surface">
+    <div class="container">
+      <div class="split-row reverse">
+        <div class="split-content">
+          <div class="badge badge-sage"><i class="fas fa-fire-alt"></i> Hearth Ember Science</div>
+          <h2>Woodland Pine Smoke & Bouquet Garni Infusions</h2>
+          <p style="line-height:1.8; margin-bottom:1.25rem;">Infusing forest aromatics requires delicate timing. Adding fresh pine needles at the beginning of a 4-hour braise causes fragile monoterpenes to volatilize and escape through lid vents, leaving behind bitter tannins.</p>
+          <p style="line-height:1.8; margin-bottom:1.5rem;">Our tested woodland methodology utilizes a two-phase infusion protocol: whole toasted cloves and crushed allspice berries are introduced during the initial fond deglazing to build a warm spice bedrock, while fresh pine needles and juniper twigs are bundled in cheesecloth and submerged for the final 35 minutes of resting off the embers.</p>
+          <a href="blog.html" class="btn btn-primary"><i class="fas fa-scroll"></i> Read Foraging Protocols</a>
+        </div>
+        <div class="split-media">
+          <img src="images/stew-cast-iron-hearth-fire.jpg" alt="Cast Iron Pot Simmering over Hearth Fire" width="600" height="380">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 6 MASTER STEW MONOGRAPHS SHOWCASE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-clove"><i class="fas fa-utensils"></i> Master Recipes</div>
+        <h2 class="section-title">Heirloom Woodland Stew Monographs</h2>
+        <p class="section-subtitle">Exhaustive step-by-step culinary blueprints engineered for wood-fired hearths, slow cookers, and enameled cast iron Dutch ovens.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-root-vegetables-carrots-parsnips.jpg" alt="Forest Venison and Spiced Root Casserole" width="400" height="250">
+          </div>
+          <div class="badge badge-amber" style="font-size:0.75rem; margin-bottom:0.5rem;">Game & Root Vegetables</div>
+          <h3 class="card-title">Forest Venison & Spiced Root Casserole</h3>
+          <p class="card-text">Slow-braised venison shoulder steeped in clove broth with heirloom yellow carrots, roasted parsnips, and cracked juniper berries.</p>
+          <div class="card-meta">
+            <span>Simmer: 3.5 Hours</span>
+            <strong>Temp: 280°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-wild-mushroom-woodland-pot.jpg" alt="Pine Smoked Wild Morel and Lentil Pot" width="400" height="250">
+          </div>
+          <div class="badge badge-sage" style="font-size:0.75rem; margin-bottom:0.5rem;">Foraged Fungi & Legumes</div>
+          <h3 class="card-title">Pine-Smoked Wild Morel & Lentil Pot</h3>
+          <p class="card-text">Earthy French green lentils simmered with dried black morels, smoked pine salt, caramelized leeks, and roasted garlic cloves.</p>
+          <div class="card-meta">
+            <span>Simmer: 1.5 Hours</span>
+            <strong>Temp: 300°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-clove-simmering-dutch-oven.jpg" alt="Slow Braised Beef Shank with Whole Cloves" width="400" height="250">
+          </div>
+          <div class="badge badge-clove" style="font-size:0.75rem; margin-bottom:0.5rem;">Heirloom Dutch Oven</div>
+          <h3 class="card-title">Slow Braised Beef Shank with Whole Cloves</h3>
+          <p class="card-text">Cross-cut marrow bone beef shank caramelized deeply in lard, deglazed with spiced grape must, and stewed until bone gelatin dissolves completely.</p>
+          <div class="card-meta">
+            <span>Simmer: 4.5 Hours</span>
+            <strong>Temp: 275°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-spiced-lamb-shank-garnish.jpg" alt="Alpine Duck and Roasted Chestnut Ragout" width="400" height="250">
+          </div>
+          <div class="badge badge-amber" style="font-size:0.75rem; margin-bottom:0.5rem;">Alpine Hearthside</div>
+          <h3 class="card-title">Alpine Duck & Roasted Chestnut Ragout</h3>
+          <p class="card-text">Rich duck legs braised in golden poultry stock infused with whole Ceylon cinnamon, sweet cloves, and sweet woodland chestnuts.</p>
+          <div class="card-meta">
+            <span>Simmer: 2.5 Hours</span>
+            <strong>Temp: 310°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-crusty-skillet-dumplings.jpg" alt="Hearthside Root Potage with Herbed Sourdough Dumplings" width="400" height="250">
+          </div>
+          <div class="badge badge-sage" style="font-size:0.75rem; margin-bottom:0.5rem;">Comfort Potage & Dumplings</div>
+          <h3 class="card-title">Hearthside Potage with Herbed Dumplings</h3>
+          <p class="card-text">Thick winter squash, turnip, and caramelized onion potage crowned with fluffy thyme-sourdough dumplings steamed directly atop the stew.</p>
+          <div class="card-meta">
+            <span>Simmer: 2.0 Hours</span>
+            <strong>Temp: 325°F</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-copper-pot-aromatic-broth.jpg" alt="Slow Simmered Woodland Rabbit and Thyme Ragout" width="400" height="250">
+          </div>
+          <div class="badge badge-clove" style="font-size:0.75rem; margin-bottom:0.5rem;">Rustic Forest Braise</div>
+          <h3 class="card-title">Woodland Rabbit & Wild Thyme Ragout</h3>
+          <p class="card-text">Farm-raised rabbit joints simmered with white root vegetables, pearl onions, and a clarifying pine-and-clove reduction glaze.</p>
+          <div class="card-meta">
+            <span>Simmer: 2.25 Hours</span>
+            <strong>Temp: 290°F</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. INTERACTIVE STEW PLANNER & THERMODYNAMIC CALCULATOR -->
+  <section id="planner" class="section section-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-amber"><i class="fas fa-sliders-h"></i> Interactive Tool</div>
+        <h2 class="section-title">Woodland Stew & Simmer Calculator</h2>
+        <p class="section-subtitle">Customize your choice of core cut, botanical spice profile, and cooking vessel to compute precise thermal curves, braising durations, and liquid reduction volumes.</p>
+      </div>
+
+      <div class="planner-box">
+        <div class="planner-grid">
+          <div class="planner-form">
+            <div class="form-group">
+              <label for="stewProtein"><i class="fas fa-drumstick-bite"></i> Core Protein or Base Cut</label>
+              <select id="stewProtein" class="form-control">
+                <option value="beef_shank" selected>Grass-Fed Cross-Cut Beef Shank (High Gelatin)</option>
+                <option value="game_venison">Wild Foraged Venison Shoulder (Lean Game)</option>
+                <option value="wild_fowl">Heritage Duck Legs & Thighs (Rich Fat)</option>
+                <option value="forest_mushrooms">Wild Morel, Chanterelle & Bean Base (Vegetarian)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stewHerb"><i class="fas fa-leaf"></i> Primary Forest Botanical Spice</label>
+              <select id="stewHerb" class="form-control">
+                <option value="clove_whole" selected>Sun-Dried Whole Cloves & Toasted Allspice</option>
+                <option value="pine_needle">Eastern White Pine Needle & Juniper Cones</option>
+                <option value="bay_laurel">Wild Bay Laurel & Fresh Mountain Thyme</option>
+                <option value="cedar_smoke">Pine Smoked Salt & Roasted Garlic</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stewPot"><i class="fas fa-ring"></i> Simmering Vessel & Heating Source</label>
+              <select id="stewPot" class="form-control">
+                <option value="dutch_oven" selected>Heavy Enameled Cast Iron Dutch Oven (Tight Seal)</option>
+                <option value="clay_cocotte">Unglazed Terracotta / Clay Cocotte (Gentle Radiant)</option>
+                <option value="copper_pot">Heavy Tin-Lined Copper Stewpot (Fast Convection)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="planner-result">
+            <div>
+              <div class="badge badge-amber" style="margin-bottom:0.75rem;">Calculated Simmer Profile</div>
+              <h4 id="configResultTitle">Beef Shank with Whole Cloves</h4>
+              
+              <div class="result-metric">
+                <span class="result-metric-label"><i class="fas fa-thermometer-half"></i> Oven / Ember Temp</span>
+                <span id="configResultTemp" class="result-metric-val">275°F - 300°F</span>
+              </div>
+              <div class="result-metric">
+                <span class="result-metric-label"><i class="fas fa-clock"></i> Active Simmer Time</span>
+                <span id="configResultTime" class="result-metric-val">4.0 Hours</span>
+              </div>
+              <div class="result-metric">
+                <span class="result-metric-label"><i class="fas fa-tint"></i> Braising Liquid Reduction</span>
+                <span id="configResultLiquid" class="result-metric-val">Rich Roasted Beef Stock & Spiced Reduction</span>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--dark-border);">
+              <p id="configResultTip" style="font-size:0.85rem; color:#D3E0D8; line-height:1.6; margin-bottom:0;">
+                Maintain a tight lid seal to promote collagen conversion into gelatin without moisture loss.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. VESSEL METALLURGY: CAST IRON & EARTHENWARE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-sage"><i class="fas fa-layer-group"></i> Cookware Metallurgy</div>
+        <h2 class="section-title">The Physics of Heavy Stew Vessels</h2>
+        <p class="section-subtitle">Why Dutch ovens and terracotta clay outshine thin stainless steel pots for low-and-slow braising chemistry.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="card-title">Volumetric Thermal Mass</h3>
+          <p class="card-text">Thick cast iron walls absorb caloric energy slowly and radiate it inward from all directions, surrounding cuts of meat with uniform omnidirectional warmth rather than scorching bottom heat points.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background-color:var(--clove-light); color:var(--clove);"><i class="fas fa-compress-arrows-alt"></i></div>
+          <h3 class="card-title">Chike Spiked Lid Condensation</h3>
+          <p class="card-text">Heavy cast iron lids fitted with underside basting spikes trap rising aromatic steam droplets, re-condensing them and showering moisture evenly across the simmering stew surface continuously.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background-color:var(--amber-light); color:var(--amber);"><i class="fas fa-gem"></i></div>
+          <h3 class="card-title">Acidic Glaze Vitrification</h3>
+          <p class="card-text">Non-reactive vitreous enamel shields delicate reductions from metallic off-flavors, allowing prolonged reduction of spiced tomato purées and fruit must reductions without oxidation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. ARTISAN SOURDOUGH & SKILLET DUMPLINGS PAIRINGS -->
+  <section class="section section-surface">
+    <div class="container">
+      <div class="split-row">
+        <div class="split-content">
+          <div class="badge badge-amber"><i class="fas fa-bread-slice"></i> Hearth Accompaniments</div>
+          <h2>Crusty Sourdough Boules & Herbed Skillet Dumplings</h2>
+          <p style="line-height:1.8; margin-bottom:1.25rem;">A rich woodland stew is incomplete without the contrast of crusty artisan carbohydrates engineered specifically to absorb viscous gelatin reductions.</p>
+          <p style="line-height:1.8; margin-bottom:1.5rem;">Long-fermented levain sourdough loaves boast open gelatinized crumb structures that draw rich clove jus into every microscopic air pocket without turning soggy. For one-pot hearth dishes, dropping fluffy sour cream and herb dumplings directly onto the bubbling ragout during the final 20 minutes creates a dual texture of steamed dumpling interior and golden oven-browned crust.</p>
+          <a href="blog.html" class="btn btn-primary"><i class="fas fa-book-open"></i> Read Bread Pairings</a>
+        </div>
+        <div class="split-media">
+          <img src="images/stew-rustic-sourdough-bread-bowl.jpg" alt="Rustic Sourdough Loaf beside Steaming Stew Bowl" width="600" height="380">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. STEP-BY-STEP HEARTH STEW PROTOCOL -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-clove"><i class="fas fa-list-ol"></i> Step-By-Step</div>
+        <h2 class="section-title">The Four-Stage Hearth Simmer Protocol</h2>
+        <p class="section-subtitle">Follow this master culinary sequence to achieve consistent restaurant-caliber depth in your home kitchen or woodland campfire.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card" style="border-top:4px solid var(--primary);">
+          <span style="font-size:2rem; font-weight:800; color:var(--primary); font-family:var(--font-heading); display:block; margin-bottom:0.75rem;">01</span>
+          <h4 style="margin-bottom:0.75rem;">Dry Brining & Fond Sear</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Salt cuts 12 hours ahead to denature surface myoglobin. Sear in animal fat or cold-pressed oil at 425°F until deep mahogany fond forms on the pot floor.</p>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--clove);">
+          <span style="font-size:2rem; font-weight:800; color:var(--clove); font-family:var(--font-heading); display:block; margin-bottom:0.75rem;">02</span>
+          <h4 style="margin-bottom:0.75rem;">Aromatics & Spice Toasting</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Sauté diced mirepoix and root vegetables in fond. Add crushed whole cloves, peppercorns, and allspice to bloom essential oils in hot fat for 90 seconds.</p>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--amber);">
+          <span style="font-size:2rem; font-weight:800; color:var(--amber); font-family:var(--font-heading); display:block; margin-bottom:0.75rem;">03</span>
+          <h4 style="margin-bottom:0.75rem;">Deglaze & Collagen Simmer</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Deglaze with rich stock and fruit reductions. Submerge protein, clamp heavy lid, and transfer to a 280°F oven for 3.5 to 4.5 hours of uninterrupted low convection.</p>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--sage);">
+          <span style="font-size:2rem; font-weight:800; color:var(--sage); font-family:var(--font-heading); display:block; margin-bottom:0.75rem;">04</span>
+          <h4 style="margin-bottom:0.75rem;">Pine Infusion & Rest</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">Stir in fresh pine needle tea glaze or bouquet garni during resting. Allow the stew to sit 25 minutes off heat so meat fibers reabsorb aromatic liquid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. TESTIMONIALS & ATELIER PATRON REVIEWS -->
+  <section class="section section-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-sage"><i class="fas fa-star"></i> Guild Testimonials</div>
+        <h2 class="section-title">Praised by Hearthside Guild Chefs</h2>
+        <p class="section-subtitle">Read firsthand experiences from executive culinary instructors and home cooks who transformed their slow-simmering craft.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div style="color:var(--amber); margin-bottom:1rem; font-size:0.95rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-text" style="font-style:italic;">"The clove and pine needle extraction protocol completely revolutionized my winter game ragouts. The citrusy pine notes balance the heavy venison fat in a way no citrus peel ever could."</p>
+          <div class="card-meta">
+            <div>
+              <strong style="display:block; color:var(--text);">Chef Julian Vance</strong>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Alpine Hearth Lodge, Vermont</span>
+            </div>
+            <div class="badge badge-sage" style="font-size:0.72rem; padding:0.2rem 0.6rem;">Verified Guild</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="color:var(--amber); margin-bottom:1rem; font-size:0.95rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-text" style="font-style:italic;">"Understanding collagen hydrolysis at 180°F saved my beef shank stews. The meat no longer tears apart stringy—it melts into liquid velvet with an unbelievable glaze."</p>
+          <div class="card-meta">
+            <div>
+              <strong style="display:block; color:var(--text);">Elena Rostova</strong>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Culinary Biochemist & Author</span>
+            </div>
+            <div class="badge badge-sage" style="font-size:0.72rem; padding:0.2rem 0.6rem;">Verified Patron</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="color:var(--amber); margin-bottom:1rem; font-size:0.95rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-text" style="font-style:italic;">"The sourdough herbed dumpling formula baked on top of the root potage is now our family's Sunday tradition. Clear, scientifically sound, and utterly delicious."</p>
+          <div class="card-meta">
+            <div>
+              <strong style="display:block; color:var(--text);">Marcus Sterling</strong>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Woodland Cast Iron Enthusiast</span>
+            </div>
+            <div class="badge badge-sage" style="font-size:0.72rem; padding:0.2rem 0.6rem;">Verified Member</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CURATED ESSAYS & MONOGRAPH HIGHLIGHTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-clove"><i class="fas fa-scroll"></i> Editorial Archive</div>
+        <h2 class="section-title">Curated Stew Treatises & Forest Essays</h2>
+        <p class="section-subtitle">Deep dive treatises exploring botanical foraging ethics, braising thermodynamics, and heirloom cookware restoration.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-clove-simmering-dutch-oven.jpg" alt="Collagen Hydrolysis and Stew Chemistry" width="400" height="250">
+          </div>
+          <span style="font-size:0.82rem; color:var(--amber); font-weight:700; text-transform:uppercase;">Thermodynamics</span>
+          <h4 style="margin:0.5rem 0 0.75rem 0;">Collagen Breakdown & Gelatin Hydrolysis Kinetics</h4>
+          <p class="card-text">How temperature control between 160°F and 195°F converts fibrous structural proteins into naturally viscous braising jus.</p>
+          <a href="blog.html" class="btn btn-outline btn-sm" style="width:100%;"><i class="fas fa-book-reader"></i> Explore Treatise</a>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-pine-needle-forest-foraging.jpg" alt="Botanical Pine Needle Foraging" width="400" height="250">
+          </div>
+          <span style="font-size:0.82rem; color:var(--sage); font-weight:700; text-transform:uppercase;">Botany & Foraging</span>
+          <h4 style="margin:0.5rem 0 0.75rem 0;">Evergreen Conifer Needles: Terpene Extraction & Safety</h4>
+          <p class="card-text">Identifying edible pine, spruce, and fir needles while avoiding toxic yew; optimal thermal immersion timing for broth clarity.</p>
+          <a href="blog.html" class="btn btn-outline btn-sm" style="width:100%;"><i class="fas fa-book-reader"></i> Explore Treatise</a>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="images/stew-whole-cloves-aromatic-spice.jpg" alt="Aromatic Clove Botany and Eugenol" width="400" height="250">
+          </div>
+          <span style="font-size:0.82rem; color:var(--clove); font-weight:700; text-transform:uppercase;">Phytochemistry</span>
+          <h4 style="margin:0.5rem 0 0.75rem 0;">Clove Eugenol & Phenylpropanoids in Savory Reductions</h4>
+          <p class="card-text">The synergistic interplay between whole dried clove buds, allspice berries, and rich braised meat peptides.</p>
+          <a href="blog.html" class="btn btn-outline btn-sm" style="width:100%;"><i class="fas fa-book-reader"></i> Explore Treatise</a>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="blog.html" class="btn btn-primary"><i class="fas fa-th-list"></i> View All 6 Master Monographs in Library</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FREQUENTLY ASKED QUESTIONS ACCORDION -->
+  <section id="faq" class="section section-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-amber"><i class="fas fa-question-circle"></i> Inquiries</div>
+        <h2 class="section-title">Woodland Stew Mastery FAQ</h2>
+        <p class="section-subtitle">Answers to common culinary questions regarding pine needle safety, whole clove extraction, and cast iron simmer maintenance.</p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <span>Which conifer needles are safe for culinary broths and stews?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Eastern White Pine (<em>Pinus strobus</em>), Douglas Fir, Norway Spruce, and Balsam Fir are safe and culinary staples rich in vitamin C and alpha-pinene. <strong>Strict Warning:</strong> Never consume needles from the Yew tree (<em>Taxus</em> family) or Ponderosa Pine, which contain toxic alkaloids. Always cross-reference multiple botanical keys before foraging.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Why do whole cloves outperform ground clove powder in slow stews?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Ground clove powder disperses microscopic particulate throughout the broth, oxidizing rapidly and frequently turning bitter and overpowering within 30 minutes. Whole clove buds contain intact oil glands that release volatile eugenol steadily over a 4-hour simmer, creating a nuanced background warmth that integrates seamlessly into the jus.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How do I prevent root vegetables from turning to mush in a 4-hour braise?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Employ a staggered addition methodology. Cut dense root vegetables (heirloom carrots, parsnips, rutabagas) into large 2-inch chunks and sear them in animal fat to form a caramelized outer shell. Introduce them to the Dutch oven during the final 60 to 75 minutes of the simmer, rather than at the start.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Can these stews be cooked in an electric slow cooker instead of a Dutch oven?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes, provided you sear your protein and bloom your whole cloves in a skillet on the stovetop first. Slow cookers do not reach browning temperatures (300°F+) necessary for Maillard reactions. After searing and deglazing, transfer the contents to your slow cooker on the LOW setting (approx. 190°F) for 6 to 8 hours.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How does cast iron thermal mass improve stew flavor?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Cast iron has high volumetric heat capacity. It dampens temperature fluctuations from oven cycling or hearth embers, ensuring the braising liquid remains in the steady 175°F–190°F zone where collagen converts to gelatin without boiling muscle fibers into toughness.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What is the best way to store and reheat leftover hearthside stews?</span>
+            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Cool the stew in an ice bath before refrigerating in airtight glass or ceramic containers for up to 4 days. As the stew rests overnight, gelatin sets and aromatics harmonize. Reheat gently over low heat, adding a splash of stock to loosen the gelatinized sauce without boiling.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. NEWSLETTER & DISPATCH DISPATCH -->
+  <section class="section section-alt">
+    <div class="container container-narrow" style="text-align: center;">
+      <div class="badge badge-clove"><i class="fas fa-envelope-open-text"></i> Seasonal Lookbook</div>
+      <h2 class="section-title">Subscribe to the Hearthside Dispatch</h2>
+      <p class="section-subtitle" style="margin-bottom: 2rem;">Receive seasonal foraging calendars, Dutch oven thermal guides, and exclusive heirloom stew monographs directly to your inbox monthly.</p>
+      
+      <form class="newsletter-form" style="max-width: 540px; margin: 0 auto 1rem auto;">
+        <input type="email" placeholder="Enter your email address..." required aria-label="Email address">
+        <button type="submit" class="btn btn-clove"><i class="fas fa-paper-plane"></i> Join Guild</button>
+      </form>
+      <p style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-lock"></i> Zero spam. Strictly curated culinary science. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- 16. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-logo-icon"><i class="fas fa-mountain"></i></div>
+            <span>CloveStewPine</span>
+          </a>
+          <p>An artisanal culinary laboratory dedicated to woodland hearthside stews, botanical conifer infusions, whole clove phytochemistry, and cast iron braising science.</p>
+          <div style="display:flex; gap:1rem; font-size:1.15rem; color:#9BAEA1;">
+            <a href="index.html" aria-label="Home"><i class="fas fa-utensils"></i></a>
+            <a href="about.html" aria-label="About"><i class="fas fa-tree"></i></a>
+            <a href="blog.html" aria-label="Blog"><i class="fas fa-book"></i></a>
+            <a href="contact.html" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Culinary Monograph</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Woodland Game Stews</a></li>
+            <li><a href="blog.html">Foraged Fungi Pots</a></li>
+            <li><a href="blog.html">Dutch Oven Braises</a></li>
+            <li><a href="blog.html">Alpine Duck Ragouts</a></li>
+            <li><a href="blog.html">Vegetable Potages</a></li>
+            <li><a href="blog.html">Sourdough Dumplings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Atelier & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Forest Heritage</a></li>
+            <li><a href="about.html#botany">Botanical Ethics</a></li>
+            <li><a href="about.html#castiron">Cast Iron Guild</a></li>
+            <li><a href="contact.html">Guild Workshops</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Botanical Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Management</a></li>
+            <li><a href="contact.html">Contact Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CloveStewPine. All Rights Reserved. Crafted for slow hearth cooking.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>Hearthside Cookie & Privacy Notice</h4>
+    <p>We use essential cookies and anonymized analytics to measure recipe readership and improve your culinary experience on CloveStewPine.</p>
+    <div class="cookie-banner-actions">
+      <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookieDeclineBtn" class="btn btn-outline btn-sm">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
